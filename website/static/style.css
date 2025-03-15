@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; /* Öğelerin genişlik ve yükseklik hesaplamasını düzgün yapar */
+}
+
+body {
+    background: #2773b2 url(https://i.pinimg.com/736x/cc/9f/60/cc9f60f7fea009c75f138a07a9f14d74.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    height: 100vh;
+}
+
+.navbar {
+    background: rgba(112, 106, 113, 0.8);
+    padding: 15px 30px; 
+    display: flex; 
+    justify-content: space-between; /* Menü ve logoyu iki yana yaslamak için İlk öğe sola, son öğe sağa yaslanır, geri kalan öğeler eşit boşluk bırakır.*/
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 100%; /* Genişliği artırdım */
+    max-width: 100vw;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #f0a500; /* Hover efekti için renk değişimi */
+    transition: 0.3s;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
